@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^0.21.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "tunk": "^3.5.1"
