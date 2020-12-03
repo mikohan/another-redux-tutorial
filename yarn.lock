@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+apply.js@latest:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/apply.js/-/apply.js-1.0.0.tgz#3a5bb85c9dd47be5abb41311a962fb95b0187f54"
+  integrity sha1-Olu4XJ3Ue+WrtBMRqWL7lbAYf1Q=
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -13,6 +18,11 @@ loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  integrity sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==
 
 redux@^4.0.5:
   version "4.0.5"
@@ -26,3 +36,10 @@ symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
+
+tunk@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/tunk/-/tunk-3.5.1.tgz#df882a5c02093d17beba85d680c3e2ea1b71a013"
+  integrity sha512-HqOeg5REHglar0xZWr1eyGwq9fcBeDweeQQnapxHw09/n0IfcbUCsXyfe26Ske9tzP8m8W09gTO4IAN2cYGDGw==
+  dependencies:
+    apply.js latest

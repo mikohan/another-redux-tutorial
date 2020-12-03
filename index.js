@@ -1,4 +1,5 @@
-const { createStore } = require('redux');
+const { createStore, applyMiddleware } = require('redux');
+const thunk = require('redux-thunk').default;
 
 const MY_ACTION = 'MY_ACTION';
 
@@ -23,7 +24,7 @@ function myReducer(state = initialState, action) {
   }
 }
 
-const store = createStoreMy(myReducer);
+const store = createStore(myReducer, applyMiddleware(thunk));
 
 console.log(store.getState(), 'Initial state expected');
 
