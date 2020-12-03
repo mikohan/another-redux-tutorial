@@ -10,20 +10,14 @@ const myAction = (payload) => {
 };
 
 const initialState = {
-  myProperty: {
-    one: 34,
-  },
+  myProperty: 34,
 };
 
 function myReducer(state = initialState, action) {
   switch (action.type) {
     case MY_ACTION:
-      return {
-        ...state,
-        myProperty: {
-          one: action.payload,
-        },
-      };
+      // console.log(state.state);
+      return { ...state.state, myProperty: action.payload };
     default:
       return { state };
   }
@@ -31,6 +25,6 @@ function myReducer(state = initialState, action) {
 
 const store = createStore(myReducer);
 
-store.dispatch(myAction(67));
+console.log(store.getState(), 'Initial state expected');
 
-console.log(store.getState());
+store.dispatch(myAction(67));
