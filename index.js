@@ -1,22 +1,5 @@
 const { createStore } = require('redux');
 
-function createStoreMy(rootReducer, initialState) {
-  let state = {};
-  let subscribers = [];
-  return {
-    dispatch(action) {
-      state = rootReducer(state, action);
-      subscribers.forEach((call) => call());
-    },
-    subscribe(callback) {
-      subscribers.push(callback);
-    },
-    getState() {
-      return state;
-    },
-  };
-}
-
 const MY_ACTION = 'MY_ACTION';
 
 const myAction = (payload) => {
@@ -40,7 +23,7 @@ function myReducer(state = initialState, action) {
   }
 }
 
-const store = createStore(myReducer);
+const store = createStoreMy(myReducer);
 
 console.log(store.getState(), 'Initial state expected');
 
